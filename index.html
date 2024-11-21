@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond the Score</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url(./imges/F.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        h1 {
+            color: #0e0c0c;
+            position: absolute;
+            display: inline;
+            margin: 30px 0px 0px 20px;
+
+        }
+
+        .notes img {
+            width: 30px;
+            animation: notes 5s ease-in-out infinite;
+        }
+
+        @keyframes notes {
+            0% {
+                transform: translateY(-200px);
+                opacity: 0;
+            }
+
+            25% {
+
+                opacity: 0.5;
+            }
+
+            50% {
+
+                opacity: 0.8;
+            }
+
+            70% {
+
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-550px);
+                opacity: 0;
+            }
+        }
+
+        .notes {
+            width: 400px;
+            left: 700px;
+            display: flexbox;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 50px;
+        }
+
+        .notes img:nth-child(1) {
+            animation-delay: 2.5s;
+        }
+
+        .notes img:nth-child(2) {
+            animation-delay: 5s;
+        }
+
+        .notes img:nth-child(3) {
+            animation-delay: 0.8s;
+        }
+
+        .notes img:nth-child(4) {
+            animation-delay: 6s;
+        }
+
+        .notes img:nth-child(5) {
+            animation-delay: 1s;
+        }
+
+        .notes img:nth-child(6) {
+            animation-delay: 4s;
+        }
+
+        .notes img:nth-child(7) {
+            animation-delay: 0.6s;
+        }
+
+        .notes img:nth-child(8) {
+            animation-delay: 3.5s;
+        }
+
+        .notes img:nth-child(7) {
+            animation-delay: 0.1s;
+        }
+
+        .notes img:nth-child(8) {
+            animation-delay: 1.5s;
+        }
+
+
+        .content {
+            position: absolute;
+            top: 35px;
+            right: 100px;
+        }
+
+        .content li {
+            list-style: none;
+            float: left;
+        }
+
+        .content ul li {
+            display: inline;
+        }
+
+        .content a {
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+            margin-left: 30px;
+            text-shadow: 0 0 3px #8a5c59;
+            transition: 1s;
+        }
+
+        .content a:hover {
+            color: rgb(148, 111, 70);
+        }
+
+        .content ul ul {
+            position: absolute;
+            display: none;
+        }
+
+        .content li li {
+            clear: left;
+        }
+
+        .content li:hover ul {
+            display: block;
+        }
+
+        .piano img {
+            /* border: 1px solid red; */
+            width: 700px;
+            height: 650px;
+            position: absolute;
+            top: 35%;
+
+            /* left:0;
+            bottom: 0;
+            right:0; */
+            margin: 0 auto;
+            transform: translate(50%)
+            /* margin: 100px 0 0 300px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./imges/1101Logo-04.png" alt="" srcset="">
+        <h1>Beyond the Score</h1>
+    </div>
+    <div class="content">
+
+        <ul>
+            <li><a href="mymusicjourney.html">My Music Journey</a>
+            </li>
+            <li><a href="performances.html">Performances </a>
+            </li>
+            <li><a href="Compositions.html">Compositions </a>
+            </li>
+            <li><a href="yt.html">Video</a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </div>
+    <!--音符-->
+    <div class="notes">
+        <img src="./imges/185068_note_music_icon.png" alt="" srcset="">
+        <img src="./imges/9025847_music_note_icon.png" alt="" srcset="">
+        <img src="./imges/9040452_music_note_icon.png" alt="" srcset="">
+        <img src="./imges/9040477_music_note_icon.png" alt="" srcset="">
+        <img src="./imges/185068_music_note_beamed_icon.png" alt="" srcset="">
+        <img src="./imges/9025847_music_note_icon.png" alt="" srcset="">
+        <img src="./imges/9040452_music_note_icon.png" alt="" srcset="">
+        <img src="./imges/9040477_music_note_beamed_icon.png" alt="" srcset="">
+        <img src="./imges/185068_music_note_beamed_icon.png" alt="" srcset="">
+        <img src="./imges/9025847_music_note_icon.png" alt="" srcset="">
+
+    </div>
+    <div class="piano">
+        <img src="./imges/piano.png" alt="" srcset="">
+    </div>
+
+
+</body>
+
+</html>

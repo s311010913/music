@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Music Journey</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+        }
+
+        body {
+            background-image: url(./imges/L.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: auto;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .wrap:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 0px;
+            clear: both;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            /* border: 1px solid red; */
+        }
+
+        .wrap h1 {
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 10px;
+            /* margin-bottom: 20px; */
+            color: rgb(255, 250, 250);
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+
+        .timeline {
+            padding: 40px 0 200px;
+        }
+
+        .timeline li {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 30px 0;
+            position: relative;
+        }
+
+        .timeline li:nth-child(odd) {
+            float: left;
+            padding-right: 100px;
+        }
+
+        .timeline li:nth-child(even) {
+            float: right;
+            padding-left: 100px;
+            transform: translateY(50%);
+        }
+
+        .timeline li:nth-child(odd)::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            width: 3px;
+            top: 0;
+            height: 100%;
+            background-color: rgb(126, 126, 126);
+            right: 0;
+        }
+
+        .timeline li:last-child::after {
+            height: 50%;
+        }
+
+        .timeline li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgb(8, 8, 8);
+            z-index: 2;
+        }
+
+        .timeline li:nth-child(odd)::before {
+            right: -10px;
+        }
+
+        .timeline li:nth-child(even)::before {
+            left: -10px;
+        }
+
+        .timeline a {
+            display: block;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid rgb(131, 130, 130);
+            box-sizing: border-box;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px #888;
+        }
+
+        .timeline a:hover {
+            background-color: #a56d53;
+        }
+
+        .timeline a:hover h2,
+        .timeline a:hover p {
+            color: #fff;
+        }
+
+        .timeline h2 {
+            color: #333;
+            font-weight: 600;
+
+        }
+
+        .timeline p {
+            color: rgb(17, 17, 17);
+            font-weight: 100;
+        }
+
+        .timeline h2::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 80px;
+            height: 3px;
+            background-color: #aaa;
+        }
+
+        .timeline li:nth-child(odd) h2::after {
+            right: 0;
+        }
+
+        .timeline li:nth-child(even) h2::after {
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="logo">
+            <img src="./imges/1101Logo-05.png" alt="" srcset="">
+            <h1>My Music Journey</h1>
+        </div>
+       
+        <ul class="timeline">
+            <li>
+                <a href="#">
+                    <h2>Discovering Music</h2>
+                    <p>My journey in music began in elementary school with learning the ukulele. I played with a sense of
+                        curiosity and found myself drawn to the freedom of musical expression. The ukulele introduced me
+                        to the pure beauty of sound, opening a door into the world of music and sparking my enduring passion.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>Joining the Recorder Team</h2>
+                    <p>As I grew older, I started learning the recorder and joined the school team. This experience taught
+                        me the importance of teamwork and precision in rhythm, allowing me to appreciate the harmony of playing
+                        together. It not only improved my skills but also helped me understand music as a form of connection.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>Junior High Music Class and Starting Composition</h2>
+                    <p>In junior high, I entered the music class and began studying piano and clarinet. In my second year,
+                        my teacher discovered my potential in composition and suggested I change my focus. This opened a
+                        new path for me, allowing me to express my thoughts and emotions through music, which has had a profound
+                        impact on me.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>High School Music Program and Studying Abroad</h2>
+                    <p>After graduating from junior high, I joined the music program at Zhongli High School. Now a sophomore,
+                        I aim to study abroad to deepen my musical journey. This path holds great meaning for me</p>
+                </a>
+
+        </ul>
+    </div>
+</body>
+
+</html>
